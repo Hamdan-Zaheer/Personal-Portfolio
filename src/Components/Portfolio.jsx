@@ -1,5 +1,5 @@
 import React from 'react';
-import epValidation from "../assets/portfolio/epValidation.png";
+import bookshelf from "../assets/portfolio/bookshelf.png";
 import navbar from "../assets/portfolio/navbar.jpg";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
@@ -9,7 +9,7 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: epValidation,
+      src: bookshelf,
     },
     {
       id: 2,
@@ -40,7 +40,7 @@ const Portfolio = () => {
         {
           portfolios.map(({id, src}) => (
             <div key={id}className='shadow-md shadow-gray-600 rounded-lg'>
-            <img src={src} alt="" className='rounded-md duration-200 hover:scale-105'/>
+            <img src={src} alt="" className='rounded-md duration-200 hover:scale-105 w-full h-full'/>
             <div className='flex items-center justify-center'>
               {/* <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
               <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button> */}
